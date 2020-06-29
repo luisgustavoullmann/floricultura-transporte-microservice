@@ -16,7 +16,7 @@ public class EntregaService {
     @Autowired
     private EntregaRepository entregaRepository;
 
-    public VoucherDto reservaEntrega(EntregaDto pedidoDto){
+    public VoucherDto reservaEntrega(EntregaDto pedidoDto) {
         Entrega entrega = new Entrega();
         entrega.setDataParaBusca(pedidoDto.getDataParaEntrega()); //Data que o transporte buscar no fornecedor
         entrega.setPrevisaoParaEntrega(pedidoDto.getDataParaEntrega().plusDays(1l)); // Data pervista para entregar no cliente final

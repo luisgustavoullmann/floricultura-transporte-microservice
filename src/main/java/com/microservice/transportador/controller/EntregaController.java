@@ -22,7 +22,7 @@ public class EntregaController {
 
     //Recebe o pedido do fornecedor e passa o voucher para loja com os dados da entrega
     @PostMapping
-    public VoucherDto reservaEntrega(@RequestBody EntregaDto pedidoDto){
+    public VoucherDto reservaEntrega(@RequestBody EntregaDto pedidoDto) {
         return entregaService.reservaEntrega(pedidoDto);
     }
 }
