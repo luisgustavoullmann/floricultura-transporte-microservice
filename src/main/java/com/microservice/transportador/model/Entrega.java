@@ -20,7 +20,7 @@ public class Entrega {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long pedidoId;
+    private Long pedidoId; // vem do fornecedor
     private LocalDate dataParaBusca;
     private LocalDate previsaoParaEntrega;
     private String enderecoOrigem;

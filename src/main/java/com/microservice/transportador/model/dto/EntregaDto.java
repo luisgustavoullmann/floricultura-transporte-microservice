@@ -14,6 +14,6 @@ import java.time.LocalDate;
 public class EntregaDto {
     private Long pedidoId;
     private LocalDate dataParaEntrega;
-    private String enderecoOrigem;
-    private String enderecoDestino;
+    private String enderecoOrigem; //Endereco Fornecedor
+    private String enderecoDestino; //Endereco Cliente que fez o POST do pedido na loja
 }
